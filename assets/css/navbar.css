@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* border-bottom: 2px solid black; */
+  height: 80px;
+  background-image: linear-gradient(
+    90deg,
+    rgb(31, 143, 251),
+    rgb(57, 218, 253)
+  );
+  animation-name: Opacityanime;
+  animation-duration: 1s;
+}
+
+.pHead {
+  background-image: radial-gradient(
+    87.99% 87.99% at 82.56% 82.09%,
+    rgb(57, 218, 253) 0px,
+    rgb(31, 143, 251) 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  font-size: 54px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  line-height: 1.27;
+  letter-spacing: -0.15rem;
+}
+
+.frontmain {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.header-search {
+  width: 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-links {
+  width: 70%;
+  padding: 0.5rem;
+  padding-left: 15rem;
+}
+
+.header-logo img {
+  padding-top: 10px;
+  width: 120px;
+  aspect-ratio: auto 120 / 68;
+  height: 68px;
+}
+
+.header i {
+  color: white;
+}
+
+.header li {
+  list-style: none;
+}
+
+.header-button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.header-button:hover {
+  cursor: pointer;
+}
+
+.header-middle {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.header {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+  width: 100%;
+}
+
+.header > li {
+  display: table-cell;
+  text-align: center;
+  position: relative;
+  border-right: 1px solid transparent;
+  background: transparent;
+  transform-style: preserve-3d;
+}
+
+.header > li.home-button {
+  width: 60px;
+}
+
+.header li > a,
+.header li > span {
+  font-family: monospace;
+  display: block;
+  color: white;
+  font-size: 1.1em;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+
+.header > li.current-menu-item > a i,
+.header > li.current-menu-item > a,
+.header > li.current-menu-item > span,
+.header li:hover,
+.header > li:hover > a,
+.header > li:hover > span,
+.header li:hover > a,
+.header li:hover > span {
+  color: #63b2f5;
+}
+
+.header li ul li {
+  position: relative;
+}
+
+.header li ul {
+  display: none;
+  text-align: left;
+  position: absolute;
+  font-size: 1.1rem;
+  background: #f2f4f9;
+}
+
+.header li ul li > a,
+.header li ul li > span {
+  display: block;
+  color: white;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-bottom: 1px solid #274472;
+  background-color: #274472;
+}
+
+.header li > ul {
+  transform: translateZ(-10px);
+}
+
+.header li:hover > ul {
+  display: block;
+  width: 200px;
+  opacity: 1;
+  animation-name: anime;
+  animation-duration: 0.25s;
+}
+
+.header li:hover > ul > li > a > span {
+  display: block;
+  animation-name: Coloranime;
+  animation-duration: 1s;
+}
+
+.header-button-long {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 1.7rem;
+  width: 12rem;
+  background-color: white;
+  border-radius: 100px;
+  padding: 2px;
+}
+
+.header-button-long .searchBox {
+  outline: none;
+  border-color: transparent;
+  padding: 0px;
+  width: 75%;
+  background-color: transparent;
+}
+
+.header-button-long .header-search-button-long {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 20%;
+}
+
+.header-button-long .header-search-button-long:hover {
+  cursor: pointer;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes Coloranime {
+  0% {
+    color: #274472;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes anime {
+  from {
+    z-index: -1;
+    transform: translate(0, -200px);
+  }
+  to {
+    z-index: 0;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes Opacityanime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
