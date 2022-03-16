@@ -12,11 +12,12 @@ setInterval(() => {
         scrolling = false;
         if (scrollY > 0 && !isNavbarScroll) {
             navbar.classList.remove('hidden');
-            window.scrollTo(0, frontMain.clientHeight);
+            window.scrollTo(0, frontMain.clientHeight - navbar.clientHeight);
+            // frontMain.innerHTML = "";
             isNavbarScroll = true;
         }
-        else if (scrollY < frontMain.clientHeight - navbar.clientHeight && isNavbarScroll) {
-            navbar.classList.add('hidden');
+        else if (scrollY < frontMain.clientHeight - navbar.clientHeight - 10 && isNavbarScroll) {
+            // frontMain.classList.add('hidden');
             window.scrollTo(0, 0);
             isNavbarScroll = false;
         }
