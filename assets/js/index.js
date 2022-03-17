@@ -17,7 +17,7 @@ setInterval(() => {
         }
         else if (scrollY < frontMain.clientHeight - 2 * navbar.clientHeight && isNavbarScroll) {
             navbar.classList.add('hidden');
-            window.scrollTo(0, 0);
+            window.scrollTo(0, frontMain.clientHeight - navbar.clientHeight);
             isNavbarScroll = false;
         }
     }
