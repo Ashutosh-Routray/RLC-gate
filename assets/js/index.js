@@ -11,3 +11,7 @@ window.addEventListener("scroll", (event) => {
     if (this.scrollY == 0)
         navbar.classList.add('hidden'), isNavbarScroll = false;
 });
+
+window.onbeforeunload = function () {
+    window.location.reload(true);
+};
