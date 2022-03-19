@@ -4,8 +4,33 @@
   scroll-behavior: smooth;
 }
 
+.goUpBtn{
+  height: 45px;
+  width: 45px;
+  z-index: 100;
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #8d94a375;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.goUpBtn .fa-caret-up{
+  font-size: 25px;
+}
+
+.goUpBtn:hover{
+  background-color: #4f7dc7c9;
+  cursor: pointer;
+  color: white;
+}
+
 body{
   background-color: white;
+  overflow-x: hidden;
 }
 
 a {

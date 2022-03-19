@@ -133,30 +133,37 @@ footer {
 }
 
 .footerContacts .socialContacts {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1.2rem;
-    font-size: 1.5rem;
+  width: 390px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
 }
 
-.footerContacts .socialContacts a .fa-facebook{
-    color: 	#4267B2;
+.footerContacts .socialContacts a .fa-facebook {
+  color: #4267b2;
 }
 
-.footerContacts .socialContacts a .fa-twitter{
-    color: 	#1DA1F2;
+.footerContacts .socialContacts a .fa-twitter {
+  color: #1da1f2;
 }
 
-.footerContacts .socialContacts a .fa-instagram-square{
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+.footerContacts .socialContacts a .fa-instagram-square {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   /* font-size: 200px; */
 }
 
-.footerContacts .socialContacts a:hover{
-    cursor: pointer;
-    color: inherit;
+.footerContacts .socialContacts a:hover {
+  cursor: pointer;
+  color: inherit;
 }
