@@ -13,11 +13,11 @@ footer {
 }
 
 .copyright {
-  padding: 10px 0;
+  padding: 8px 0;
   text-align: center;
   font-family: monospace;
-  color: rgb(131, 131, 131);
-  font-size: 15px;
+  color: rgb(44, 44, 44);
+  font-size: 16px;
 }
 
 .footBar {
@@ -41,20 +41,20 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
-  margin-top: 3rem;
+  margin-top: 90px;
 }
 
 .footerAchievements {
-  width: 30%;
+  width: 35%;
   padding: 0 3rem;
 }
 
 .footerLinks {
-  width: 30%;
+  width: 35%;
 }
 
 .footerContacts {
-  width: 40%;
+  width: 30%;
 }
 
 .footerRecentLinks ul li {
@@ -80,7 +80,7 @@ footer {
 
 .footerContacts .subcription {
   background-color: #e2eaf2;
-  width: 65%;
+  width: 390px;
   height: 4.5rem;
   border-radius: 0.7rem;
   padding: 1rem;
@@ -133,7 +133,7 @@ footer {
 }
 
 .footerContacts .socialContacts {
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     margin-top: 1.2rem;
@@ -146,6 +146,14 @@ footer {
 
 .footerContacts .socialContacts a .fa-twitter{
     color: 	#1DA1F2;
+}
+
+.footerContacts .socialContacts a .fa-instagram-square{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-size: 200px; */
 }
 
 .footerContacts .socialContacts a:hover{
