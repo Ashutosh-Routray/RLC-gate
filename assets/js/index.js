@@ -19,7 +19,7 @@ window.addEventListener("scroll", (event) => {
         isNavbarScroll && hasReached) {
         window.scrollTo(0, frontMain.clientHeight - navbar.clientHeight);
     }
-    if (this.scrollY <= frontMain.clientHeight - navbar.clientHeight - 1)
+    if (this.scrollY <= frontMain.clientHeight - navbar.clientHeight)
         upBtn.classList.add('hidden');
     else
         upBtn.classList.remove('hidden');

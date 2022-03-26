@@ -1,0 +1,49 @@
+.testimonialMain {
+  width: 100%;
+  height: auto;
+  margin-top: 90px;
+  font-family: "Manrope", sans-serif;
+  min-height: 100vh;
+}
+
+.testimonial {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.testimonialMain h3 {
+  word-spacing: 8px;
+  margin-left: 10px;
+}
+
+.testimonialMain .testimonial .content {
+  background-color: rgba(204, 204, 35, 0.815);
+  padding: 20px;
+  margin: 10px;
+}
+
+.testimonialMain .testimonial .belowContent {
+  background-color: rgba(214, 214, 146, 0.815);
+  padding: 20px;
+  margin: 10px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonialMain .testimonial .belowContent .belowContentMain {
+  margin-left: 40px;
+}
+
+.testimonialMain .testimonial .belowContent .belowContentMain .socials {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+.testimonialMain .testimonial .belowContent img {
+  width: 100px;
+  height: 100px;
+}
