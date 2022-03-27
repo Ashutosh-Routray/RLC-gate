@@ -25,5 +25,35 @@
     rgb(0, 127, 246) 100%
   ); */
   background: -webkit-radial-gradient(60% bottom,rgb(113, 229, 255),rgb(0, 127, 246),rgb(0, 127, 246));
-background: radial-gradient(at 100% bottom,rgb(113, 229, 255),rgb(15, 51, 255));
+background: radial-gradient(at 100% bottom,rgb(113, 229, 255),rgb(0, 127, 246));
+}
+
+.rlc-mainpage{
+  width: 80%;
+  /* background-color: aqua; */
+  /* border-radius: 5px; */
+}
+.rlc-mainpage-area{
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+
+.rlc-mainpage-head{
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 34px;
+  color: white;
+}
+
+.rlc-mainpage-info{
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+}
+.rlc-mainpage-info span a{
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
 }
