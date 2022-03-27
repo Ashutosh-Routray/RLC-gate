@@ -1,0 +1,58 @@
+.announcement-signal{
+    color: red;
+}
+
+.announcement-stat{
+    font-weight: 900;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 8px;
+}
+
+.announcement-stat span{
+    margin-left: 20px;
+}
+
+.announcement-area{
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+}
+
+.announcement{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 75%;
+    padding: 30px;
+    padding-left: 45px;
+    padding-bottom: 12px;
+    background-color: white;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+.announcement-info{
+    display: flex;
+}
+
+.announcement-info span{
+    padding-left: 15px;
+    font-size: 25px;
+    color: rgb(48, 118, 250);
+}
+
+.announcement-lower{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.announcement-lower button{
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 0.7rem;
+    margin: 8px;
+    border-style: none;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    color: white;
+}

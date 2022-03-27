@@ -1,6 +1,8 @@
 var navbar = document.querySelector('.navbar');
 var frontMain = document.querySelector('.frontmain');
-var upBtn = document.querySelector('.goUpBtn');
+var main = document.querySelector('.main');
+// var upBtn = document.querySelector('.goUpBtn');
+var forall = document.querySelector('*');
 var isNavbarScroll = false;
 var hasReached = false;
 
@@ -9,25 +11,33 @@ window.addEventListener("scroll", (event) => {
         navbar.classList.remove('hidden');
         window.scrollTo(0, frontMain.clientHeight - navbar.clientHeight);
         isNavbarScroll = true;
+        forall.style.scrollBehavior='auto';
+        setTimeout(() => {
+            frontMain.classList.add('hidden');
+            window.scrollTo(0, 0);
+            main.style.marginTop = '5rem';
+            // navbar.classList.add('hidden');
+            forall.style.scrollBehavior='smooth';
+        }, 750);
     }
-    if (this.scrollY == frontMain.clientHeight - navbar.clientHeight)
-        hasReached = true;
-    if (this.scrollY == 0)
-        navbar.classList.add('hidden'), isNavbarScroll = false;
+    // if (this.scrollY == 0)
+    //     upBtn.classList.add('hidden');
+    // else
+    //     upBtn.classList.remove('hidden');
+});
 
-    if (this.scrollY <= frontMain.clientHeight - navbar.clientHeight - 1 &&
-        isNavbarScroll && hasReached) {
-        window.scrollTo(0, frontMain.clientHeight - navbar.clientHeight);
-    }
-    if (this.scrollY <= frontMain.clientHeight - navbar.clientHeight)
-        upBtn.classList.add('hidden');
+setInterval(() => {
+    console.log(colorChange);
+    if (colorChange)
+        announcement.style.color = 'red', colorChange = false;
     else
-        upBtn.classList.remove('hidden');
-});
+        announcement.style.color = 'rgb(158, 0, 0)', colorChange = true;
 
-upBtn.addEventListener('click', (event) => {
-    window.scrollTo(0, frontMain.clientHeight - navbar.clientHeight);
-});
+}, 300);
+
+// upBtn.addEventListener('click', (event) => {
+//     window.scrollTo(0, 0);
+// });
 
 window.onbeforeunload = function () {
     window.location.reload(true);
