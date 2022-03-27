@@ -37,4 +37,3 @@ setInterval(() => {
         announcement.style.color = 'rgb(158, 0, 0)', colorChange = true;
 
 }, 300);
-
