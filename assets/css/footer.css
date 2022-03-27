@@ -12,7 +12,7 @@ footer {
      */
      background-image: radial-gradient(
     87.99% 87.99% at 82.56% 82.09%,
-    rgb(113, 229, 255) 0px,
+    rgb(6, 184, 255) 0px,
     rgb(0, 127, 246) 100%
   );
     font-family: 'Poppins';
@@ -98,6 +98,7 @@ footer {
     height: 4.5rem;
     border-radius: 0.7rem;
     padding: 1rem;
+    border-radius: 5px;
   }
   
   .footerContacts .subcription p {
@@ -108,6 +109,7 @@ footer {
     display: flex;
     flex-direction: row;
     margin-top: 0.8rem;
+
   }
 
   .subcription{
@@ -117,7 +119,7 @@ footer {
   .footerContacts .subcription .subInput .subEmail {
     width: 12rem;
     height: 2rem;
-    /* border-radius: 0.2rem; */
+    border-radius: 0.2rem;
     outline: none;
     border: none;
     padding: 0 0.4rem;
@@ -128,14 +130,14 @@ footer {
   }
   
   .footerContacts .subcription .subInput .subSubmit {
-    width: auto;
+    /* width: auto; */
     height: 2rem;
-    /* border-radius: 0.2rem; */
+    border-radius: 0.2rem;
     outline: none;
     border: none;
     padding: 0 0.4rem;
     margin-left: 0.8rem;
-    background-color: #023487;
+    background-color: rgb(226, 0, 0);
     color: white;
     transition: 0.2s;
   }
