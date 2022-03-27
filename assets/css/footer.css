@@ -1,169 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
 footer {
-  width: 100%;
-  height: 21rem;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(74, 197, 197, 0.61);
-  font-family: monospace;
-}
-
-.copyright,
-.footbar {
-  width: 100%;
-}
-
-.copyright {
-  padding: 8px 0;
-  text-align: center;
-  font-family: monospace;
-  color: rgb(44, 44, 44);
-  font-size: 16px;
-}
-
-.footBar {
-  height: 18rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.footHead {
-  padding-bottom: 20px;
-  font-size: 25px;
-}
-
-.footerAchievements,
-.footerLinks,
-.footerContacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100%;
-  margin-top: 90px;
-}
-
-.footerAchievements {
-  width: 35%;
-  padding: 0 3rem;
-}
-
-.footerLinks {
-  width: 35%;
-}
-
-.footerContacts {
-  width: 30%;
-}
-
-.footerRecentLinks ul li {
-  list-style: none;
-  width: 100%;
-  margin-bottom: 0.8rem;
-}
-
-.footerRecentLinks ul li a {
-  color: black;
-  font-size: 1rem;
-  width: 100%;
-}
-
-.footerRecentLinks ul li a:hover {
-  color: white;
-}
-
-.footerRecentLinks .fa-play {
-  font-size: 10px;
-  margin-right: 1rem;
-}
-
-.footerContacts .subcription {
-  background-color: #e2eaf2;
-  width: 390px;
-  height: 4.5rem;
-  border-radius: 0.7rem;
-  padding: 1rem;
-}
-
-.footerContacts .subcription p {
-  font-size: 1rem;
-}
-
-.footerContacts .subcription .subInput {
-  display: flex;
-  flex-direction: row;
-  margin-top: 0.8rem;
-}
-
-.footerContacts .subcription .subInput .subEmail {
-  width: 12rem;
-  height: 2rem;
-  /* border-radius: 0.2rem; */
-  outline: none;
-  border: none;
-  padding: 0 0.4rem;
-}
-
-.footerContacts .subcription .subInput .subEmail:focus {
-  outline: 0.2rem solid rgba(255, 255, 0, 0.774);
-}
-
-.footerContacts .subcription .subInput .subSubmit {
-  width: auto;
-  height: 2rem;
-  /* border-radius: 0.2rem; */
-  outline: none;
-  border: none;
-  padding: 0 0.4rem;
-  margin-left: 0.8rem;
-  background-color: #023487;
-  color: white;
-  transition: 0.2s;
-}
-
-.footerContacts .subcription .subInput .subSubmit:hover {
-  background-color: #cf2e2e;
-  /* color: black; */
-  cursor: pointer;
-}
-
-.footerContacts .subcription .subInput .subSubmit:focus {
-  outline: 0.2rem dotted rgba(255, 255, 0, 0.774);
-}
-
-.footerContacts .socialContacts {
-  width: 390px;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1.2rem;
-  font-size: 1.5rem;
-}
-
-.footerContacts .socialContacts a .fa-facebook {
-  color: #4267b2;
-}
-
-.footerContacts .socialContacts a .fa-twitter {
-  color: #1da1f2;
-}
-
-.footerContacts .socialContacts a .fa-instagram-square {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
+    width: 100%;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(11, 134, 248);
+     */
+     background-image: radial-gradient(
+    87.99% 87.99% at 82.56% 82.09%,
+    rgb(113, 229, 255) 0px,
+    rgb(0, 127, 246) 100%
   );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* font-size: 200px; */
-}
+    font-family: 'Poppins';
+  }
+  
+  .copyright,
+  .footbar {
+    width: 100%;
+  }
+  
+  .copyright {
+    padding: 8px 0;
+    text-align: center;
+    font-family: 'Poppins';
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+  
+  .footBar {
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footHead {
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+  
+  .footerAchievements,
+  .footerLinks,
+  .footerContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    margin-top: 90px;
+  }
+  
+  .footerAchievements {
+    color: white;
+    width: 35%;
+    padding: 0 3rem;
+  }
+  
+  .footerLinks {
+    color: white;
+    width: 35%;
+  }
+  
+  .footerContacts {
+    color: white;
+    width: 30%;
+  }
+  
+  .footerRecentLinks ul li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 0.8rem;
+  }
+  
+  .footerRecentLinks ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .footerRecentLinks ul li a:hover {
+    color: white;
+  }
+  
+  .footerRecentLinks .fa-play {
+    font-size: 10px;
+    margin-right: 1rem;
+  }
+  
+  .footerContacts .subcription {
+    background-color: #e2eaf2;
+    width: 300px;
+    height: 4.5rem;
+    border-radius: 0.7rem;
+    padding: 1rem;
+  }
+  
+  .footerContacts .subcription p {
+    font-size: 1rem;
+  }
+  
+  .footerContacts .subcription .subInput {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.8rem;
+  }
 
-.footerContacts .socialContacts a:hover {
-  cursor: pointer;
-  color: inherit;
-}
+  .subcription{
+    color: black;
+  }
+  
+  .footerContacts .subcription .subInput .subEmail {
+    width: 12rem;
+    height: 2rem;
+    /* border-radius: 0.2rem; */
+    outline: none;
+    border: none;
+    padding: 0 0.4rem;
+  }
+  
+  .footerContacts .subcription .subInput .subEmail:focus {
+    outline: 0.2rem solid rgba(255, 255, 0, 0.774);
+  }
+  
+  .footerContacts .subcription .subInput .subSubmit {
+    width: auto;
+    height: 2rem;
+    /* border-radius: 0.2rem; */
+    outline: none;
+    border: none;
+    padding: 0 0.4rem;
+    margin-left: 0.8rem;
+    background-color: #023487;
+    color: white;
+    transition: 0.2s;
+  }
+  
+  .footerContacts .subcription .subInput .subSubmit:hover {
+    background-color: #cf2e2e;
+    /* color: black; */
+    cursor: pointer;
+  }
+  
+  .footerContacts .subcription .subInput .subSubmit:focus {
+    outline: 0.2rem dotted rgba(255, 255, 0, 0.774);
+  }
+  
+  .footerContacts .socialContacts {
+    width: 390px;
+    display: flex;
+    justify-content: left;
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+  }
+  
+  .footerContacts .socialContacts a{
+    margin-right: 25px;
+  }
+
+
+  .footerContacts .socialContacts a .fa-facebook {
+    color: white;
+  }
+  
+  .footerContacts .socialContacts a .fa-twitter {
+    color: white;
+  }
+  
+  .footerContacts .socialContacts a .fa-instagram {
+    background-color: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: white;
+  }
+  
+  .footerContacts .socialContacts a:hover {
+    cursor: pointer;
+    color: inherit;
+  }
