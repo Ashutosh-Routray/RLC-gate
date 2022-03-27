@@ -128,7 +128,7 @@ header {
 .header > li:hover > span,
 .header li:hover > a,
 .header li:hover > span {
-  color: #006eff;
+  color: white;
 }
 
 .header li ul li {
