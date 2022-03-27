@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 
 .navbar {
   width: 100%;
   display: flex;
   flex-direction: row;
   height: 80px;
-  background-image: linear-gradient(
-    90deg,
-    rgb(31, 143, 251),
-    rgb(57, 218, 253)
-  );
-  animation-name: Opacityanime;
-  animation-duration: 1s;
+  /* background-image: radial-gradient(
+    87.99% 87.99% at 82.56% 82.09%,
+    rgb(32, 210, 250) 0px,
+    rgb(11, 134, 248) 100%
+  ); */
+  background-color: rgb(11, 134, 248);
+  /* animation-name: Opacityanime; */
+  /* animation-duration: 1s; */
 }
 
 header {
@@ -28,7 +32,7 @@ header {
   width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: right;
 }
 
 .header-search {
@@ -44,9 +48,9 @@ header {
   height: 100%;
   width: 80%;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .header-logo img {
@@ -97,6 +101,8 @@ header {
   position: relative;
   border-right: 1px solid transparent;
   background: transparent;
+  /* background-color: #006eff; */
+  height: max-content;
   transform-style: preserve-3d;
 }
 
@@ -106,11 +112,11 @@ header {
 
 .header li > a,
 .header li > span {
-  font-family: monospace;
-  display: block;
+  font-family: 'Poppins';
+  /* display: block; */
   color: white;
-  font-size: 1.1em;
-  padding: 20px 0px;
+  font-size: 1em;
+  /* padding: 20px 0px; */
   cursor: pointer;
 }
 
@@ -143,11 +149,7 @@ header {
   color: white;
   font-size: 0.9rem;
   padding: 10px 20px;
-  background-image: linear-gradient(
-    90deg,
-    rgb(31, 143, 251),
-    rgb(57, 218, 253)
-  );
+  background-color: rgb(31, 143, 251);
 }
 
 .header li > ul {
@@ -158,47 +160,13 @@ header {
   display: block;
   width: 200px;
   opacity: 1;
-  animation-name: anime;
-  animation-duration: 0.25s;
 }
 
 .header li:hover > ul > li > a > span {
   display: block;
-  animation-name: Coloranime;
-  animation-duration: 1s;
 }
 
-.header-button-long {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  height: 1.7rem;
-  width: 12rem;
-  background-color: rgba(255, 255, 255, 0.205);
-  border-radius: 100px;
-  padding: 2px;
-}
 
-.header-button-long .searchBox {
-  outline: none;
-  border-color: transparent;
-  padding: 0px;
-  width: 75%;
-  background-color: transparent;
-  color: white;
-}
-
-.header-button-long .header-search-button-long {
-  background-color: transparent;
-  outline: none;
-  border: none;
-  width: 20%;
-}
-
-.header-button-long .header-search-button-long:hover {
-  cursor: pointer;
-}
 
 .sticky {
   position: fixed;
@@ -207,33 +175,4 @@ header {
 
 .hidden {
   display: none;
-}
-
-@keyframes Coloranime {
-  0% {
-    color: rgba(255, 255, 255, 0.493);
-  }
-  100% {
-    color: white;
-  }
-}
-
-@keyframes anime {
-  from {
-    z-index: -1;
-    transform: translate(0, -200px);
-  }
-  to {
-    z-index: 0;
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes Opacityanime {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
