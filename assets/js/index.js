@@ -3,10 +3,11 @@ var frontMain = document.querySelector('.frontmain');
 var main = document.querySelector('.main');
 var upBtn = document.querySelector('.goUpBtn');
 var forall = document.querySelector('*');
+var announcement = document.querySelector('.announcement-signal')
 var isNavbarScroll = false;
 var hasReached = false;
 
-window.addEventListener("scroll", (event) => {
+setTimeout(() => {
     if (!isNavbarScroll) {
         navbar.classList.remove('hidden');
         window.scrollTo(0, frontMain.clientHeight - navbar.clientHeight);
@@ -24,12 +25,16 @@ window.addEventListener("scroll", (event) => {
         upBtn.classList.add('hidden');
     else
         upBtn.classList.remove('hidden');
-});
+}, 1000);
 
-upBtn.addEventListener('click', (event) => {
-    window.scrollTo(0, 0);
-});
+var colorChange=false;
 
-window.onbeforeunload = function () {
-    window.location.reload(true);
-};
+setInterval(() => {
+    console.log(colorChange);
+    if (colorChange)
+        announcement.style.color = 'red', colorChange = false;
+    else
+        announcement.style.color = 'rgb(158, 0, 0)', colorChange = true;
+
+}, 300);
+
