@@ -1,6 +1,8 @@
 var navbar = document.querySelector('.navbar');
 var frontMain = document.querySelector('.frontmain');
+var main = document.querySelector('.main');
 var upBtn = document.querySelector('.goUpBtn');
+var forall = document.querySelector('*');
 var isNavbarScroll = false;
 var hasReached = false;
 
@@ -9,24 +11,23 @@ window.addEventListener("scroll", (event) => {
         navbar.classList.remove('hidden');
         window.scrollTo(0, frontMain.clientHeight - navbar.clientHeight);
         isNavbarScroll = true;
+        forall.style.scrollBehavior='auto';
+        setTimeout(() => {
+            frontMain.classList.add('hidden');
+            window.scrollTo(0, 0);
+            main.style.marginTop = '5rem';
+            // navbar.classList.add('hidden');
+            forall.style.scrollBehavior='smooth';
+        }, 750);
     }
-    if (this.scrollY == frontMain.clientHeight - navbar.clientHeight)
-        hasReached = true;
     if (this.scrollY == 0)
-        navbar.classList.add('hidden'), isNavbarScroll = false;
-
-    if (this.scrollY <= frontMain.clientHeight - navbar.clientHeight - 1 &&
-        isNavbarScroll && hasReached) {
-        window.scrollTo(0, frontMain.clientHeight - navbar.clientHeight);
-    }
-    if (this.scrollY <= frontMain.clientHeight - navbar.clientHeight - 1)
         upBtn.classList.add('hidden');
     else
         upBtn.classList.remove('hidden');
 });
 
 upBtn.addEventListener('click', (event) => {
-    window.scrollTo(0, frontMain.clientHeight - navbar.clientHeight);
+    window.scrollTo(0, 0);
 });
 
 window.onbeforeunload = function () {
