@@ -19,7 +19,7 @@ setTimeout(() => {
             main.style.marginTop = '5rem';
             // navbar.classList.add('hidden');
             forall.style.scrollBehavior='smooth';
-        }, 750);
+        }, 1000);
     }
     if (this.scrollY == 0)
         upBtn.classList.add('hidden');
