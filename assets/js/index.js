@@ -1,12 +1,13 @@
 var navbar = document.querySelector('.navbar');
 var frontMain = document.querySelector('.frontmain');
 var main = document.querySelector('.main');
-// var upBtn = document.querySelector('.goUpBtn');
+var upBtn = document.querySelector('.goUpBtn');
 var forall = document.querySelector('*');
+var announcement = document.querySelector('.announcement-signal')
 var isNavbarScroll = false;
 var hasReached = false;
 
-window.addEventListener("scroll", (event) => {
+setTimeout(() => {
     if (!isNavbarScroll) {
         navbar.classList.remove('hidden');
         window.scrollTo(0, frontMain.clientHeight - navbar.clientHeight);
@@ -20,11 +21,13 @@ window.addEventListener("scroll", (event) => {
             forall.style.scrollBehavior='smooth';
         }, 750);
     }
-    // if (this.scrollY == 0)
-    //     upBtn.classList.add('hidden');
-    // else
-    //     upBtn.classList.remove('hidden');
-});
+    if (this.scrollY == 0)
+        upBtn.classList.add('hidden');
+    else
+        upBtn.classList.remove('hidden');
+}, 1000);
+
+var colorChange=false;
 
 setInterval(() => {
     console.log(colorChange);
@@ -35,10 +38,3 @@ setInterval(() => {
 
 }, 300);
 
-// upBtn.addEventListener('click', (event) => {
-//     window.scrollTo(0, 0);
-// });
-
-window.onbeforeunload = function () {
-    window.location.reload(true);
-};
