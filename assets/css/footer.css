@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
 footer {
     width: 100%;
-    height: 28rem;
+    /* height: 25rem; */
     display: flex;
     flex-direction: column;
     /* background-color: rgb(11, 134, 248);
@@ -24,24 +24,24 @@ footer {
   }
   
   .copyright {
-    padding: 8px 0;
+    padding: 2px 0;
     text-align: center;
     font-family: 'Poppins';
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 10px;
   }
   
   .footBar {
-    height: 25rem;
+    height: 28rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items:flex-start;
   }
   
   .footHead {
     padding-bottom: 20px;
-    font-size: 25px;
+    font-size: 24px;
   }
   
   .footerAchievements,
@@ -51,19 +51,23 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 100%;
+    /* height: 100%; */
     margin-top: 90px;
   }
   
   .footerAchievements {
     color: white;
-    width: 35%;
+    width: 30%;
     padding: 0 3rem;
   }
   
+  .footerAchievements p{
+      font-size: 16px;
+  }
+
   .footerLinks {
     color: white;
-    width: 35%;
+    width: 25%;
   }
   
   .footerContacts {
@@ -75,12 +79,14 @@ footer {
     list-style: none;
     width: 100%;
     margin-bottom: 0.8rem;
+    /* text-decoration: none; */
   }
   
   .footerRecentLinks ul li a {
     color: rgb(255, 255, 255);
     font-size: 1rem;
     width: 100%;
+    text-decoration: none;
   }
   
   .footerRecentLinks ul li a:hover {
@@ -153,7 +159,7 @@ footer {
   }
   
   .footerContacts .socialContacts {
-    width: 390px;
+    /* width: 390px; */
     display: flex;
     justify-content: left;
     margin-top: 1.2rem;

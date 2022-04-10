@@ -1,59 +1,40 @@
-.pHead {
- background-color: white;
-  color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  font-size: 54px;
-  font-family: "Manrope", sans-serif;
-  font-weight: 800;
-  line-height: 1.27;
-  letter-spacing: -0.15rem;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.RLC,.RLC-info{
+    /* width: 75%; */
+    font-family: Poppins;
+    color: white;
 }
 
-.frontmain {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  /* background-image: radial-gradient(
-    50% 87.99% at 82.56% 82.09%,
-    rgb(113, 229, 255) 0px,
-    rgb(0, 127, 246) 100%
-  ); */
-  background: -webkit-radial-gradient(60% bottom,rgb(113, 229, 255),rgb(0, 127, 246),rgb(0, 127, 246));
-background: radial-gradient(at 100% bottom,rgb(113, 229, 255),rgb(0, 127, 246));
+.main{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
 }
 
-.rlc-mainpage{
-  width: 80%;
-  /* background-color: aqua; */
-  /* border-radius: 5px; */
-}
-.rlc-mainpage-area{
-  display: flex;
-  justify-content: center;
-  /* background-color: aqua; */
+.RLC{
+    font-size: 34px;
 }
 
-.rlc-mainpage-head{
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 34px;
-  color: white;
+.RLC-info{
+    font-size: 15px;
 }
 
-.rlc-mainpage-info{
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 17px;
-  color: white;
+.RLC-main-page{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
 }
-.rlc-mainpage-info span a{
-  text-decoration: none;
-  font-weight: 900;
-  color: white;
+
+.testimonials-slide{
+    display: flex;
+}
+
+.card-deck{
+    display: flex;
 }
