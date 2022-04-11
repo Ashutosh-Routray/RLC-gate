@@ -1,25 +1,57 @@
+let slideIndex = 0;
+let slides = document.getElementsByClassName("slides");
+var info;
 
+function plusSlides(n) {
+    slideIndex += n;
+    drawSlides(slideIndex, info);
+}
+//../json/testimonial.json
+fetch("./assets/json/testimonial.json")
+    .then(response => {
+        console.log("BRUH");
+        return response.json();
+    })
+    .then(data => {
+        init(data);
+        info = data;
+    });
 
-var slideIndex=0;
-showSlides(slideIndex);
-
-function plus(n){
-    showSlides(slideIndex+=n);
+function makeSlide(imgSrc, name, college, desc) {
+    var html = `<div class="slide">
+    <img src="${imgSrc}" />
+    <p class="name">${name}</p>
+    <p class="college">${college}</p>
+    <p class="desc">
+      <i class="fa-solid fa-quote-left"></i>
+      ${desc}
+      <i class="fa-solid fa-quote-right"></i>
+    </p>
+  </div>`;
+    return html;
 }
 
-function showSlides(n){
-    var card=document.getElementsByClassName("test-card");
-    if(n<0){
-        slideIndex=card.length+n;
+function init(data) {
+    slides.innerHTML = "";
+    var html = "";
+    for (let i = 0; i < 3; i++) {
+        html += makeSlide(data[i].imageSrc, data[i].name, data[i].college, data[i].desc);
     }
-    if(n>=card.length){
-        slideIndex=0;
+    slides[0].innerHTML = html;
+}
+
+function drawSlides(n, data) {
+    if (n < 0) {
+        slideIndex = data.length + n;
     }
-    for(var i=0;i<card.length;i++){
-        card[i].style.display="none";
-        console.log(i);
+    if (n >= data.length) {
+        slideIndex = 0;
     }
-    card[(slideIndex)%(card.length)].style.display="block";
-    card[(slideIndex+2)%(card.length)].style.display="block";
-    card[(slideIndex+1)%(card.length)].style.display="block";
+    slides.innerHTML = "";
+    var html = "";
+    for (let i = 0; i < 3; i++) {
+        let j = (slideIndex + i) % data.length;
+        html += makeSlide(data[j].imageSrc, data[j].name, data[j].college, data[j].desc);
+    }
+    slides[0].innerHTML = html;
 }

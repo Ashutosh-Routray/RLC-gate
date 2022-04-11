@@ -1,22 +1,26 @@
-{
-    "Test1":{
-        "Name": "Ashutosh",
-        "Info": "I love this place",
-        "Place":"RLC"
-    },
-    "Test2":{
-        "Name": "Ashutosh",
-        "Info": "I love this place",
-        "Place":"RLC"
-    },
-    "Test3":{
-        "Name": "Ashutosh",
-        "Info": "I love this place",
-        "Place":"RLC"
-    },
-    "Test4":{
-        "Name": "Ashutosh",
-        "Info": "I love this place",
-        "Place":"RLC"
-    }
-}
+[
+  {
+    "name": "Ashok D R",
+    "college": "Joined M.Tech(Research), IISc",
+    "desc": "SOne year in RLC was one of the turning points of my life. RLC is not only a good place for GATE coaching but also a good place to learn basic concepts in E&C",
+    "imageSrc": "./assets/images/ashok-d-r-rlc.jpg"
+  },
+  {
+    "name": "Anantha Narayanan R",
+    "college": "Joined M.Tech(Research), IISc",
+    "desc": "Raghunath Learning Center is the best coaching institute where one can learn the various electronics subjects to its fullest. The classroom environment is very interactive, and the fact that the basics are given utmost importance keeps the students in good stead. I still remember these words of Raghunath Sir – “By joining RLC one can be guaranteed to clear any technical interview with ease”. This statement clearly holds good in each and every RLCian.",
+    "imageSrc": "./assets/images/anantha-narayanan-rlc.jpeg"
+  },
+  {
+    "name": "Sapana Chaudhary",
+    "college": "Joined M.Tech at IITM",
+    "desc": "I consider myself fortunate to have got an opportunity to learn at RLC. Be here to realize how beautiful ECE subjects are.",
+    "imageSrc": "./assets/images/Sapana-Chaudhary-IITM-RLC-GATE.jpg"
+  },
+  {
+    "name": "Amjath Husain",
+    "college": "Joined M.Tech at IITB",
+    "desc": "RLC is the best place to learn ECE subjects.Here concepts are covered in depth which helps student to solve problems of any difficulty level easily and to clear interviews. Also the teachers here are very motivating and will guide you through out your preparations for the exams and also at any point of time of your life.",
+    "imageSrc": "./assets/images/amjath-husain-gate.jpg"
+  }
+]
